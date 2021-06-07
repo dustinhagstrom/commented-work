@@ -1,0 +1,5 @@
+/node_modules
+
+.env
+# gitignore node b/c don't need to push
+# gitignore .env b/c sensitive information that we don't want to push
