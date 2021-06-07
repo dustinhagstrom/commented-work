@@ -4,18 +4,18 @@ const {
   isEmail,
   isAlpha,
   isAlphanumeric,
-} = require("validator");
+} = require("validator"); // bring in validator functionality
 
-const checkIsEmpty = (target) => (isEmpty(target) ? true : false);
+const checkIsEmpty = (target) => (isEmpty(target) ? true : false); //write our own empty checks using validator
 
 const checkIsStrongPassword = (password) =>
-  isStrongPassword(password) ? true : false;
+  isStrongPassword(password) ? true : false; //write our own strong password checks using validator
 
-const checkIsEmail = (email) => (isEmail(email) ? true : false);
+const checkIsEmail = (email) => (isEmail(email) ? true : false); //write our own valid email checks using validator
 
-const checkIsAlpha = (target) => (isAlpha(target) ? true : false);
+const checkIsAlpha = (target) => (isAlpha(target) ? true : false); //write our own alpha checks using validator
 
-const checkIsAlphanumeric = (target) => (isAlphanumeric(target) ? true : false);
+const checkIsAlphanumeric = (target) => (isAlphanumeric(target) ? true : false); //write our own alphanumeric checks using validator
 
 module.exports = {
   checkIsEmpty,
@@ -23,4 +23,4 @@ module.exports = {
   checkIsEmail,
   checkIsAlpha,
   checkIsAlphanumeric,
-};
+}; //export our functions
